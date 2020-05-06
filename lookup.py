@@ -435,7 +435,7 @@ def markupForBibItem(myDict):
 	if len(authors) == 1:
 		authorString = authors[0]
 	else:
-		lastAuthor = authors.pop(-1)
+		lastAuthor = authors[-1]
 		authorString = ", ".join(authors) + " and " + lastAuthor
 
 	title = myDict["title"]
